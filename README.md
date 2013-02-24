@@ -15,9 +15,9 @@ The `--save` tells NPM to automatically add it to your `package.json` file
 ## Usage
 
 ```js
-// Import module
+// Import a module
 var DigitalOceanAPI = require('digitalocean-api');
-// Create instance with your credentials
+// Create an instance with your API credentials
 var api = new DigitalOceanAPI('client_id', 'api_key');
 
 // Get things done
@@ -25,4 +25,63 @@ api.dropletGetAll(function(error, droplets){
 	console.log(droplets);
 });
 
+```
+
+## Methods
+
+All methods follow the [official API documentation](https://www.digitalocean.com/api).
+
+Convention for callback arguments: `callback(error, data)`
+
+### Droplets
+
+```js
+dropletGetAll(callback)
+dropletGet(id, callback)
+dropletNew(name, sizeId, imageId, regionId, sshKeyIds, callback)
+dropletRebootHard(id, callback)
+dropletPowerCycle(id, callback)
+dropletShutdown(id, callback)
+dropletPowerOff(id, callback)
+dropletPowerOn(id, callback)
+dropletResetRootPassword(id, callback)
+dropletResize(id, sizeId, callback)
+dropletSnapshot(id, name, callback)
+dropletRestore(id, imageId, callback)
+dropletRebuild(id, imageId, callback)
+dropletBackupEnable(id, callback)
+dropletBackupDisable(id, callback)
+dropletDestroy(id, callback)
+```
+
+### Sizes
+
+```js
+sizeGetAll(callback)
+```
+
+### Images
+
+```js
+imageGetAll(callback)
+imageGetGlobal(callback)
+imageGetMine(callback)
+imageGet(id, callback)
+imageDestroy(id, callback)
+```
+
+### SSH keys
+
+```js
+sshKeyGetAll(callback)
+sshKeyGet(id, callback)
+sshKeyAdd(name, pubKey, callback)
+sshKeyEdit(id, pubKey, callback)
+sshKeyDestroy(id, callback)
+```
+
+### Regions
+
+```js
+regionGetAll(callback)
 ```
