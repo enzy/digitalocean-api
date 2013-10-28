@@ -85,3 +85,9 @@ sshKeyDestroy(id, callback)
 ```js
 regionGetAll(callback)
 ```
+
+### Events
+
+```js
+eventGet(id,callback)
+```
