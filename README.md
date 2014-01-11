@@ -93,8 +93,9 @@ sizeGetAll(callback)
 ```js
 domainGetAll(callback)
 domainNew(name, ipAddress, callback)
-domainGet(id)
-domainDestroy(id)
+domainGet(id, callback)
+domainDestroy(id, callback)
+domainRecordGetAll(id, callback)
 ```
 
 ### Events
