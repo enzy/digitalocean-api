@@ -37,8 +37,8 @@ Convention for callback arguments: `callback(error, data)`
 
 ```js
 dropletGetAll(callback)
+dropletNew(name, sizeId, imageId, regionId, sshKeyIds, privateNetworking, backupsEnabled, callback)
 dropletGet(id, callback)
-dropletNew(name, sizeId, imageId, regionId, sshKeyIds, callback)
 dropletRebootHard(id, callback)
 dropletPowerCycle(id, callback)
 dropletShutdown(id, callback)
@@ -50,9 +50,9 @@ dropletSnapshot(id, name, callback)
 dropletRestore(id, imageId, callback)
 dropletRebuild(id, imageId, callback)
 dropletRename(id, name, callback)
+dropletDestroy(id, callback)
 dropletBackupEnable(id, callback)
 dropletBackupDisable(id, callback)
-dropletDestroy(id, callback)
 ```
 
 ### Regions
@@ -64,6 +64,7 @@ regionGetAll(callback)
 ### Images
 
 ```js
+images(filter, callback)
 imageGetAll(callback)
 imageGetGlobal(callback)
 imageGetMine(callback)
@@ -76,8 +77,8 @@ imageTransfer(id, regionId, callback)
 
 ```js
 sshKeyGetAll(callback)
-sshKeyGet(id, callback)
 sshKeyAdd(name, pubKey, callback)
+sshKeyGet(id, callback)
 sshKeyEdit(id, pubKey, callback)
 sshKeyDestroy(id, callback)
 ```
@@ -97,9 +98,9 @@ domainGet(id, callback)
 domainDestroy(id, callback)
 domainRecordGetAll(id, callback)
 domainRecordNew(id, recordType, data, name, priority, port, weight, callback)
-domainRecordGet(domain_id, record_id, callback)
-domainRecordEdit(domain_id, record_id, recordType, data, name, priority, port, weight, callback)
-domainRecordDestroy(domain_id, record_id, callback)
+domainRecordGet(id, recordId, callback)
+domainRecordEdit(id, recordId, recordType, data, name, priority, port, weight, callback)
+domainRecordDestroy(id, recordId, callback)
 ```
 
 ### Events
