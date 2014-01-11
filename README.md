@@ -39,7 +39,7 @@ Convention for callback arguments: `callback(error, data)`
 dropletGetAll(callback)
 dropletNew(name, sizeId, imageId, regionId, sshKeyIds, privateNetworking, backupsEnabled, callback)
 dropletGet(id, callback)
-dropletRebootHard(id, callback)
+dropletReboot(id, callback)
 dropletPowerCycle(id, callback)
 dropletShutdown(id, callback)
 dropletPowerOff(id, callback)
@@ -51,8 +51,6 @@ dropletRestore(id, imageId, callback)
 dropletRebuild(id, imageId, callback)
 dropletRename(id, name, callback)
 dropletDestroy(id, callback)
-dropletBackupEnable(id, callback)
-dropletBackupDisable(id, callback)
 ```
 
 ### Regions
