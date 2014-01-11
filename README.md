@@ -94,6 +94,7 @@ sizeGetAll(callback)
 domainGetAll(callback)
 domainNew(name, ipAddress, callback)
 domainGet(id)
+domainDestroy(id)
 ```
 
 ### Events
