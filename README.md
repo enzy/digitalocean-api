@@ -49,6 +49,7 @@ dropletResize(id, sizeId, callback)
 dropletSnapshot(id, name, callback)
 dropletRestore(id, imageId, callback)
 dropletRebuild(id, imageId, callback)
+dropletRename(id, name, callback)
 dropletBackupEnable(id, callback)
 dropletBackupDisable(id, callback)
 dropletDestroy(id, callback)
@@ -68,6 +69,7 @@ imageGetGlobal(callback)
 imageGetMine(callback)
 imageGet(id, callback)
 imageDestroy(id, callback)
+imageTransfer(id, regionId, callback)
 ```
 
 ### SSH keys
