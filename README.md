@@ -37,9 +37,9 @@ Convention for callback arguments: `callback(error, data)`
 
 ```js
 dropletGetAll(callback)
+dropletNew(name, sizeId, imageId, regionId, sshKeyIds, privateNetworking, backupsEnabled, callback)
 dropletGet(id, callback)
-dropletNew(name, sizeId, imageId, regionId, sshKeyIds, callback)
-dropletRebootHard(id, callback)
+dropletReboot(id, callback)
 dropletPowerCycle(id, callback)
 dropletShutdown(id, callback)
 dropletPowerOff(id, callback)
@@ -49,9 +49,36 @@ dropletResize(id, sizeId, callback)
 dropletSnapshot(id, name, callback)
 dropletRestore(id, imageId, callback)
 dropletRebuild(id, imageId, callback)
-dropletBackupEnable(id, callback)
-dropletBackupDisable(id, callback)
+dropletRename(id, name, callback)
 dropletDestroy(id, callback)
+```
+
+### Regions
+
+```js
+regionGetAll(callback)
+```
+
+### Images
+
+```js
+images(filter, callback)
+imageGetAll(callback)
+imageGetGlobal(callback)
+imageGetMine(callback)
+imageGet(id, callback)
+imageDestroy(id, callback)
+imageTransfer(id, regionId, callback)
+```
+
+### SSH keys
+
+```js
+sshKeyGetAll(callback)
+sshKeyAdd(name, pubKey, callback)
+sshKeyGet(id, callback)
+sshKeyEdit(id, pubKey, callback)
+sshKeyDestroy(id, callback)
 ```
 
 ### Sizes
@@ -60,30 +87,18 @@ dropletDestroy(id, callback)
 sizeGetAll(callback)
 ```
 
-### Images
+### Domains
 
 ```js
-imageGetAll(callback)
-imageGetGlobal(callback)
-imageGetMine(callback)
-imageGet(id, callback)
-imageDestroy(id, callback)
-```
-
-### SSH keys
-
-```js
-sshKeyGetAll(callback)
-sshKeyGet(id, callback)
-sshKeyAdd(name, pubKey, callback)
-sshKeyEdit(id, pubKey, callback)
-sshKeyDestroy(id, callback)
-```
-
-### Regions
-
-```js
-regionGetAll(callback)
+domainGetAll(callback)
+domainNew(name, ipAddress, callback)
+domainGet(id, callback)
+domainDestroy(id, callback)
+domainRecordGetAll(id, callback)
+domainRecordNew(id, recordType, data, name, priority, port, weight, callback)
+domainRecordGet(id, recordId, callback)
+domainRecordEdit(id, recordId, recordType, data, name, priority, port, weight, callback)
+domainRecordDestroy(id, recordId, callback)
 ```
 
 ### Events
