@@ -96,6 +96,7 @@ domainNew(name, ipAddress, callback)
 domainGet(id, callback)
 domainDestroy(id, callback)
 domainRecordGetAll(id, callback)
+domainRecordNew(id, recordType, data, name, priority, port, weight, callback)
 ```
 
 ### Events
