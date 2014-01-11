@@ -99,6 +99,7 @@ domainRecordGetAll(id, callback)
 domainRecordNew(id, recordType, data, name, priority, port, weight, callback)
 domainRecordGet(domain_id, record_id, callback)
 domainRecordEdit(domain_id, record_id, recordType, data, name, priority, port, weight, callback)
+domainRecordDestroy(domain_id, record_id, callback)
 ```
 
 ### Events
