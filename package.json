@@ -3,6 +3,12 @@
 	"version": "0.0.4",
 	"author": "Matej Simek <email@matejsimek.cz>",
 	"description": "DigitalOcean API wrapper",
+	"contributors": [ 
+	{
+		"name": "Ryan Sullivan",
+		"email": "ryan@toptiertech.com"
+	} 
+	],
 	"keywords": ["digitalocean", "digitalocean-api"],
 	"homepage": "https://github.com/enzy/digitalocean-api",
 
