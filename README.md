@@ -55,10 +55,10 @@ dropletBackupDisable(id, callback)
 dropletDestroy(id, callback)
 ```
 
-### Sizes
+### Regions
 
 ```js
-sizeGetAll(callback)
+regionGetAll(callback)
 ```
 
 ### Images
@@ -82,10 +82,18 @@ sshKeyEdit(id, pubKey, callback)
 sshKeyDestroy(id, callback)
 ```
 
-### Regions
+### Sizes
 
 ```js
-regionGetAll(callback)
+sizeGetAll(callback)
+```
+
+### Domains
+
+```js
+domainGetAll(callback)
+domainNew(name, ipAddress, callback)
+domainGet(id)
 ```
 
 ### Events
