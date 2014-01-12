@@ -37,16 +37,16 @@ Convention for callback arguments: `callback(error, data)`
 
 ```js
 dropletGetAll(callback)
-dropletNew(name, sizeId, imageId, regionId, sshKeyIds, privateNetworking, backupsEnabled, callback)
+dropletNew(name, sizeId, imageId, regionId, optionals, callback)
 dropletGet(id, callback)
 dropletReboot(id, callback)
 dropletPowerCycle(id, callback)
 dropletShutdown(id, callback)
 dropletPowerOff(id, callback)
 dropletPowerOn(id, callback)
-dropletResetRootPassword(id, callback)
+dropletPasswordReset(id, callback)
 dropletResize(id, sizeId, callback)
-dropletSnapshot(id, name, callback)
+dropletSnapshot(id, optionals, callback)
 dropletRestore(id, imageId, callback)
 dropletRebuild(id, imageId, callback)
 dropletRename(id, name, callback)
@@ -62,7 +62,6 @@ regionGetAll(callback)
 ### Images
 
 ```js
-images(filter, callback)
 imageGetAll(callback)
 imageGetGlobal(callback)
 imageGetMine(callback)
@@ -95,9 +94,9 @@ domainNew(name, ipAddress, callback)
 domainGet(id, callback)
 domainDestroy(id, callback)
 domainRecordGetAll(id, callback)
-domainRecordNew(id, recordType, data, name, priority, port, weight, callback)
+domainRecordNew(id, recordType, data, optionals, callback)
 domainRecordGet(id, recordId, callback)
-domainRecordEdit(id, recordId, recordType, data, name, priority, port, weight, callback)
+domainRecordEdit(id, recordId, recordType, data, optionals, callback)
 domainRecordDestroy(id, recordId, callback)
 ```
 
