@@ -62,7 +62,6 @@ regionGetAll(callback)
 ### Images
 
 ```js
-images(filter, callback)
 imageGetAll(callback)
 imageGetGlobal(callback)
 imageGetMine(callback)
