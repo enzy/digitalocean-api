@@ -39,6 +39,8 @@
     "request": "2.x"
   },
   "devDependencies": {
-    "mocha": "latest"
+    "mocha": "latest",
+    "grunt": "~0.4.2",
+    "grunt-jsdoc": "~0.5.1"
   }
 }
