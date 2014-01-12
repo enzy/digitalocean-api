@@ -37,7 +37,7 @@ Convention for callback arguments: `callback(error, data)`
 
 ```js
 dropletGetAll(callback)
-dropletNew(name, sizeId, imageId, regionId, sshKeyIds, privateNetworking, backupsEnabled, callback)
+dropletNew(name, sizeId, imageId, regionId, optionals, callback)
 dropletGet(id, callback)
 dropletReboot(id, callback)
 dropletPowerCycle(id, callback)
