@@ -96,7 +96,7 @@ domainDestroy(id, callback)
 domainRecordGetAll(id, callback)
 domainRecordNew(id, recordType, data, optionals, callback)
 domainRecordGet(id, recordId, callback)
-domainRecordEdit(id, recordId, recordType, data, name, priority, port, weight, callback)
+domainRecordEdit(id, recordId, recordType, data, optionals, callback)
 domainRecordDestroy(id, recordId, callback)
 ```
 
