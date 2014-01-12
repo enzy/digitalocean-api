@@ -1,34 +1,32 @@
 {
-	"name": "digitalocean-api",
-	"version": "0.1.0",
-	"author": "Matej Simek <email@matejsimek.cz>",
-	"description": "DigitalOcean API wrapper",
-	"contributors": [ 
-	{
-		"name": "Ryan Sullivan",
-		"email": "ryan@toptiertech.com"
-	} 
-	],
-	"keywords": ["digitalocean", "digitalocean-api"],
-	"homepage": "https://github.com/enzy/digitalocean-api",
-
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/enzy/digitalocean-api.git"
-	},
-
-	"main": "./lib/digitalocean.js",
-
-	"engines": {
-		"node": "~0.8.20"
-	},
-
-	"dependencies": {
-		"xtend": "~1.0.3",
-		"request": "~2.12.0"
-	},
-
-	"devDependencies": {
-		"mocha": "~1.8.1"
-	}
+  "name": "digitalocean-api",
+  "version": "0.1.0",
+  "author": "Matej Simek <email@matejsimek.cz>",
+  "description": "DigitalOcean API wrapper",
+  "contributors": [
+    {
+      "name": "Ryan Sullivan",
+      "email": "ryan@toptiertech.com"
+    }
+  ],
+  "keywords": [
+    "digitalocean",
+    "digitalocean-api"
+  ],
+  "homepage": "https://github.com/enzy/digitalocean-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enzy/digitalocean-api.git"
+  },
+  "main": "./lib/digitalocean.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "xtend": "2.x",
+    "request": "2.x"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  }
 }
