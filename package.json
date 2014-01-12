@@ -1,12 +1,24 @@
 {
   "name": "digitalocean-api",
   "version": "0.1.0",
-  "author": "Matej Simek <email@matejsimek.cz>",
+  "author": "Matěj Šimek <email@matejsimek.cz> (www.matejsimek.cz)",
   "description": "DigitalOcean API wrapper",
   "contributors": [
     {
       "name": "Ryan Sullivan",
       "email": "ryan@toptiertech.com"
+    },
+    {
+      "name": "Eric Vicenti",
+      "email": "ericvicenti@gmail.com"
+    },
+    {
+      "name": "Manuel Stofer",
+      "email": "manuel@takimata.ch"
+    },
+    {
+      "name": "Pahan Sarathchandra",
+      "email": "pahan123@gmail.com"
     }
   ],
   "keywords": [
