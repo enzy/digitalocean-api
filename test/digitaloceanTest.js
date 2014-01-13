@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 
-var config = JSON.parse(fs.readFileSync(path.normalize(__dirname + '/config.js', 'utf8')));
+var config = JSON.parse(fs.readFileSync(path.normalize(__dirname + '/config.json', 'utf8')));
 
 describe('DigitalOcean API Wrapper', function() {
 	var Digitalocean = require('../lib/digitalocean');
