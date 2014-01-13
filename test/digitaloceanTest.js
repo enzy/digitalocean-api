@@ -6,7 +6,7 @@ describe('DigitalOcean API', function() {
 	var Digitalocean = require('../lib/digitalocean');
 	var api = new Digitalocean(config.clientId, config.apiKey);
 
-	describe('Droplets test', function() {    
+	describe('Droplet test', function() {
 		it('should get all droplets', function(done) {
 			api.dropletGetAll(done);
 		});
@@ -16,16 +16,17 @@ describe('DigitalOcean API', function() {
 		it('should get all regions', function(done) {
 			api.regionGetAll(done);
 		});
+		
 	});
 	
 	describe('Image test', function() {    
 		it('should get all images', function(done) {
-			this.timeout(6000);
+			this.timeout(8000);
 			api.imageGetAll(done);
 		});
 		
 		it('should get global images', function(done) {
-			this.timeout(6000);
+			this.timeout(8000);
 			api.imageGetGlobal(done);
 		});
 		
@@ -52,5 +53,3 @@ describe('DigitalOcean API', function() {
 		});
 	});
 });
-
-
