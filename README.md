@@ -31,6 +31,8 @@ api.dropletGetAll(function(error, droplets){
 
 All methods follow the [official API documentation](https://www.digitalocean.com/api).
 
+More [detailed documentation](http://enzy.github.io/digitalocean-api/Digitalocean.html) generated from the source code is available.
+
 Convention for callback arguments: `callback(error, data)`
 
 ### Droplets
