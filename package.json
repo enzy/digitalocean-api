@@ -1,6 +1,6 @@
 {
   "name": "digitalocean-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Matěj Šimek <email@matejsimek.cz> (www.matejsimek.cz)",
   "description": "DigitalOcean API wrapper",
   "contributors": [
