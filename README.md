@@ -1,6 +1,9 @@
-# digitalocean-api <img align="right" src="https://david-dm.org/enzy/digitalocean-api.png"><img align="right" src="https://badge.fury.io/js/digitalocean-api.png">
+# digitalocean-api 
 
 The digitalocean-api is a module that allows you to communicate with the [DigitalOcean API](https://www.digitalocean.com/api) from node.js
+
+[![NPM module](https://img.shields.io/npm/v/digitalocean-api.png)](https://www.npmjs.org/package/digitalocean-api)
+[![Gittip](http://img.shields.io/gittip/enzy.svg)](https://www.gittip.com/enzy/)
 
 ## Installation
 
