@@ -3,7 +3,7 @@
 The digitalocean-api is a module that allows you to communicate with the [DigitalOcean API](https://www.digitalocean.com/api) from node.js
 
 [![NPM module](https://img.shields.io/npm/v/digitalocean-api.png)](https://www.npmjs.org/package/digitalocean-api)
-[![Gittip](http://img.shields.io/gittip/enzy.svg)](https://www.gittip.com/enzy/)
+[![Gittip](https://img.shields.io/gittip/enzy.svg)](https://www.gittip.com/enzy/)
 
 ## Installation
 
